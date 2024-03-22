@@ -1,0 +1,37 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/car-sharing-service
+    username: root
+    password: 9616
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+  jooq:
+    sql-dialect: org.hibernate.dialect.MySQL8Dialect
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+security:
+  jwt:
+    token:
+      secret-key: secret
+      expire-length: 3600000
+
+aws:
+  accessKey: your accessKey
+  secretAccessKey: your secretAccessKey
+  bucketName: your bucketName
+  region: your region
+
+
+bot:
+  name: CarRentalTestBot
+  token: 7189530524:AAG1dMWJakFAYvmmIpSQLSnfyNb1VGw6LDw
+  admin_chat: 1
+
+
+stripe:
+  secretKey: sk_test_51OqdzLLtNAIxFHF1ggIuO1cmTyjUDRUpJ7Vvajar9pkhpdYDYPCG4Pb9dH4JiX33WmRSf6g9zROzdC1pikuYZBtG00bIcBO9vm
